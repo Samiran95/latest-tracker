@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/gadgets.css">
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animate/gadgetanimate.js" defer></script>
+    <title>Gadgets anb Device Dashboard</title>
+</head>
+
+<body>
+    <div class="red-color"></div>
+    <div class="green-color"></div>
+    <div class="upper-page">
+        <div class="title">Device & Gadgets</div>
+        <div class="upper">
+            <div class="card-left">
+                <div class="card-upper">Balance Available</div>
+                <div class="card-lower">
+                    <div class="card-contents">20000</div>
+                </div>
+            </div>
+
+            <div class="card-right">
+                <div class="card-right-upper"></div>
+                <div class="card-right-lower"></div>
+            </div>
+
+        </div>
+        <div class="middle">
+            <div class="middle-word">Planned Purchases</div>
+            <div class="middle-action-button">
+                <button type="button" class="add-button" onclick="upcomingGadgetForm()"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="delete-button"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="lower" onclick="transaction()">
+            <div class="dashboard-container">
+                <div class="container-upper">First Container</div>
+                <div class="container-lower"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-------Second Page---------->
+    <div class="below-page">
+        <!-------forms------------------>
+        <!--Upcoming Gadgets Form--->
+        <div class="upcoming-gadget-form">
+            <div class="below-containers-upper">
+                <div class="container-description">Planned Purchases</div>
+                <div class="container-close" onclick="closeUpcomingGadgetForm()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="below-containers-middle">
+                <form class="gadget-form">
+                    <input id="input" type="date">
+                    <input id="input" type="text">
+                    <input id="input" type="text">
+                    <select id="input">
+                        <option value="">Payment Method</option>
+                        <option value="UPI">UPI</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Online">Online</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </form>
+            </div>
+            <div class="below-containers-lower">
+                <div class="income-submit-button">Submit</div>
+                <div class="income-history-button">History</div>
+            </div>
+        </div>
+        <!--Upcoming Gadgets Form-->
+
+        <!--Expenses Form------->
+        <!-- Gadgets-Expense-form -->
+        <div class="gadget-expense-form">
+            <div class="below-containers-upper">
+                <div class="container-description">Gadgets Expense</div>
+                <div class="container-close" onclick="closeGadgetExpenseForm()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="below-containers-middle">
+                <form class="gadget-form">
+                    <input id="input" type="date">
+                    <input id="input" type="text">
+                    <input id="input" type="text">
+                    <select id="input">
+                        <option value="">Payment Method</option>
+                        <option value="UPI">UPI</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Online">Online</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </form>
+            </div>
+            <div class="below-containers-lower">
+                <div class="expense-submit-button">Submit</div>
+                <div class="expense-history-button">History</div>
+            </div>
+        </div>
+        <!-- Gadgets-Expense-form -->
+        <!--Expenses Form------>
+
+        <!-------transaction------>
+        <div class="transactions">
+            <div class="transaction-container">
+                <div class="expense-button" onclick="gadgetExpenseForm()">Expenses</div>
+            </div>
+        </div>
+        <!-------transaction------>
+        <!-------forms------------------>
+
+        <!-------Words---------->
+        <div class="transaction-word">Select Transactions</div>
+        <!-------Words---------->
+
+        <!-- Elements ---------->
+        <!-- Necessity Element -->
+        <div class="necessity-element">
+            <div class="necessity-data">
+                <div class="necessity-data-upper-upper">Current Expenses</div>
+                <div class="necessity-data-upper-lower">20000</div>
+            </div>
+            <div class="necessity-icon">
+                <div class="necessity-actual-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="necessity-actual-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            </div>
+        </div>
+        <!-- Necessity Element -->
+
+        <!-- Wants Element -->
+        <div class="want-element">
+            <div class="want-data">
+                <div class="want-data-upper-upper">Current Expenses</div>
+                <div class="want-data-upper-lower">20000</div>
+            </div>
+            <div class="want-icon">
+                <div class="want-actual-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="want-actual-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            </div>
+        </div>
+        <!-- Wants Element -->
+
+        <!-- Others Element -->
+        <div class="other-element">
+            <div class="other-data">
+                <div class="other-data-upper-upper">Current Expenses</div>
+                <div class="other-data-upper-lower">20000</div>
+            </div>
+            <div class="other-icon">
+                <div class="other-actual-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="other-actual-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            </div>
+        </div>
+        <!-- Others Element -->
+
+
+        <!-- Income Element -->
+        <div class="income-element">
+            <div class="income-data">
+                <div class="income-data-upper-upper">Current Income</div>
+                <div class="income-data-upper-lower">20000</div>
+            </div>
+            <div class="income-icon">
+                <div class="income-actual-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="income-actual-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            </div>
+        </div>
+        <!-- Income Element -->
+
+        <!-- Close Transaction -->
+        <div class="close-transaction">
+            <div class="close-container" onclick="closeTransaction()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+
+        <!-- Close Transaction -->
+        <!-- Elements ---------->
+
+    </div>
+    <!-------Second Page---------->
+</body>
+
+</html>

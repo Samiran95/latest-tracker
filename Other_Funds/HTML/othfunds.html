@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/othfunds.css">
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animate/othfundsanimate.js" defer></script>
+    <title>Other Funds Dashboard</title>
+</head>
+
+<body>
+    <div class="red-color"></div>
+    <div class="green-color"></div>
+    <div class="upper-page">
+        <div class="title">Other Funds</div>
+        <div class="upper">
+
+            <div class="card-left">
+                <div class="card-upper">Balance Available</div>
+                <div class="card-lower">
+                    <div class="card-contents">20000</div>
+                </div>
+            </div>
+
+            <div class="card-right">
+                <div class="card-right-upper"></div>
+                <div class="card-right-lower"></div>
+            </div>
+
+        </div>
+        <div class="middle">Dashboard list</div>
+        <div class="lower" onclick="transaction()">
+            <div class="dashboard-container">
+                <div class="container-upper">Firt Container</div>
+                <div class="container-lower"></div>
+            </div>
+
+            <div class="dashboard-container">
+                <div class="container-upper">Firt Container</div>
+                <div class="container-lower"></div>
+            </div>
+
+            <div class="dashboard-container">
+                <div class="container-upper">Firt Container</div>
+                <div class="container-lower"></div>
+            </div>
+
+            <div class="dashboard-container">
+                <div class="container-upper">Firt Container</div>
+                <div class="container-lower"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-------Second Page---------->
+    <div class="below-page">
+        <!-------forms------------------>
+        <!--Selection Category-->
+        <div class="selection-category">
+            <div class="below-containers-upper">
+                <div class="container-description">Want to Pay for?</div>
+                <div class="container-close" onclick="closeSelectionCategory()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="selection-category-lower">
+                <div class="data-container">
+                    <div class="data-container-upper">Necessity</div>
+                    <div class="data-container-lower">
+                        <div class="data-left" onclick="necessityForm()">
+                            <div class="data-left-upper">
+                                <div class="left-upper-upper">Balance left :</div>
+                                <div class="left-upper-lower">No Limit Set</div>
+                            </div>
+                            <div class="data-left-middle">
+                                <div class="left-middle-upper">Month Expenses :</div>
+                                <div class="left-middle-lower">15000</div>
+                            </div>
+                            <div class="data-left-lower">
+                                <div class="left-lower-upper">Variability :</div>
+                                <div class="left-lower-lower">19%</div>
+                            </div>
+                        </div>
+                        <div class="data-right">
+                            <div class="data-right-upper">
+                                <div class="right-upper-upper"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                <div class="right-upper-lower">Trend</div>
+                            </div>
+                            <div class="data-right-lower">
+                                <div class="right-lower-upper"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div class="right-lower-lower">History</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-container">
+                    <div class="data-container-upper">Wants</div>
+                    <div class="data-container-lower">
+                        <div class="data-left" onclick="wantsForm()">
+                            <div class="data-left-upper">
+                                <div class="left-upper-upper">Balance left :</div>
+                                <div class="left-upper-lower">No Limit Set</div>
+                            </div>
+                            <div class="data-left-middle">
+                                <div class="left-middle-upper">Month Expenses :</div>
+                                <div class="left-middle-lower">15000</div>
+                            </div>
+                            <div class="data-left-lower">
+                                <div class="left-lower-upper">Variability :</div>
+                                <div class="left-lower-lower">19%</div>
+                            </div>
+                        </div>
+                        <div class="data-right">
+                            <div class="data-right-upper">
+                                <div class="right-upper-upper"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                <div class="right-upper-lower">Trend</div>
+                            </div>
+                            <div class="data-right-lower">
+                                <div class="right-lower-upper"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div class="right-lower-lower">History</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-container">
+                    <div class="data-container-upper">Others</div>
+                    <div class="data-container-lower">
+                        <div class="data-left" onclick="othersForm()">
+                            <div class="data-left-upper">
+                                <div class="left-upper-upper">Balance left :</div>
+                                <div class="left-upper-lower">No Limit Set</div>
+                            </div>
+                            <div class="data-left-middle">
+                                <div class="left-middle-upper">Month Expenses :</div>
+                                <div class="left-middle-lower">15000</div>
+                            </div>
+                            <div class="data-left-lower">
+                                <div class="left-lower-upper">Variability :</div>
+                                <div class="left-lower-lower">19%</div>
+                            </div>
+                        </div>
+                        <div class="data-right">
+                            <div class="data-right-upper">
+                                <div class="right-upper-upper"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                <div class="right-upper-lower">Trend</div>
+                            </div>
+                            <div class="data-right-lower">
+                                <div class="right-lower-upper"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div class="right-lower-lower">History</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Selection Category-->
+
+        <!--Addition Form--->
+        <div id="shares-buy-form" class="investment-form">
+            <div class="below-containers-upper">
+                <div class="container-description">Add Funds</div>
+                <div class="container-close" onclick="closeSharesBuyForm()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="below-containers-middle">
+                <form class="other-form">
+                    <input id="input" type="date">
+                    <input id="input" type="text">
+                    <input id="input" type="text">
+                    <select id="input">
+                        <option value="">Payment Method</option>
+                        <option value="UPI">UPI</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Online">Online</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </form>
+            </div>
+            <div class="below-containers-lower">
+                <div class="income-submit-button">Submit</div>
+                <div class="income-history-button">History</div>
+            </div>
+        </div>
+        <!--Addition Form-->
+
+        <!--Expense------->
+        <div id="fixed-buy-form" class="investment-form">
+            <div class="below-containers-upper">
+                <div class="container-description">Expenses</div>
+                <div class="container-close" onclick="closeFixedBuyForm()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="below-containers-middle">
+                <form class="other-form">
+                    <input id="input" type="date">
+                    <input id="input" type="text">
+                    <input id="input" type="text">
+                    <select id="input">
+                        <option value="">Payment Method</option>
+                        <option value="UPI">UPI</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Online">Online</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </form>
+            </div>
+            <div class="below-containers-lower">
+                <div class="income-submit-button">Submit</div>
+                <div class="income-history-button">History</div>
+            </div>
+        </div>
+        <!-- Expense-form -->
+
+        <!-- Other-Investment-Buy -->
+
+        <div id="others-buy-form" class="investment-form">
+            <div class="below-containers-upper">
+                <div class="container-description">Investment Buy</div>
+                <div class="container-close" onclick="closeOthersBuyForm()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="below-containers-middle">
+                <form class="other-form">
+                    <input id="input" type="date">
+                    <input id="input" type="text">
+                    <input id="input" type="text">
+                    <select id="input">
+                        <option value="">Payment Method</option>
+                        <option value="UPI">UPI</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Online">Online</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </form>
+            </div>
+            <div class="below-containers-lower">
+                <div class="income-submit-button">Submit</div>
+                <div class="income-history-button">History</div>
+            </div>
+        </div>
+
+
+        <div id="others-sell-form" class="investment-form">
+            <div class="below-containers-upper">
+                <div class="container-description">Investment Sell</div>
+                <div class="container-close" onclick="closeOthersSellForm()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="below-containers-middle">
+                <form class="other-form">
+                    <input id="input" type="date">
+                    <input id="input" type="text">
+                    <input id="input" type="text">
+                    <select id="input">
+                        <option value="">Payment Method</option>
+                        <option value="UPI">UPI</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Online">Online</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </form>
+            </div>
+            <div class="below-containers-lower">
+                <div class="income-submit-button">Submit</div>
+                <div class="income-history-button">History</div>
+            </div>
+        </div>
+        <!-- Other-Investment-Buy -->
+        <!--Expenses Form------>
+
+        <!-------transaction------>
+        <!-- Main selection -->
+        <div id="select-transaction-container" class="transactions">
+            <div class="transaction-container">
+                <div class="shares-button" onclick="sharesBuyForm()">Add</div>
+                <div class="fixed-button" onclick="fixedBuyForm()">Expenses</div>
+                <div class="others-button" onclick="othersTransaction()">Invest</div>
+            </div>
+        </div>
+        <!-- Main selection -->
+
+        <!-- Investment selection -->
+        <div id="others-selection" class="transactions">
+            <div class="transaction-container">
+                <div class="buy-button" onclick="othersBuyForm()">Buy</div>
+                <div class="sell-button" onclick="othersSellForm()">Sell</div>
+            </div>
+        </div>
+        <!-- Investment selection -->
+        <!-------transaction------>
+        <!-------forms------------------>
+
+        <!-------Words---------->
+        <div id="select-transaction" class="transaction-word">Select Transactions</div>
+        <div id="shares-transaction" class="transaction-word">Add</div>
+        <div id="fixed-transaction" class="transaction-word">Expenses</div>
+        <div id="others-transaction" class="transaction-word">Investments</div>
+        <!-------Words---------->
+
+        <!-- Elements ---------->
+        <!-- Necessity Element -->
+
+        <!-- Wants Element -->
+        <div class="want-element">
+            <div class="want-data">
+                <div class="want-data-upper-upper">Current Expenses</div>
+                <div class="want-data-upper-lower">20000</div>
+            </div>
+            <div class="want-icon">
+                <div class="want-actual-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="want-actual-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            </div>
+        </div>
+        <!-- Wants Element -->
+
+        <!-- Others Element -->
+        <div class="other-element">
+            <div class="other-data">
+                <div class="other-data-upper-upper">Current Expenses</div>
+                <div class="other-data-upper-lower">20000</div>
+            </div>
+            <div class="other-icon">
+                <div class="other-actual-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="other-actual-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            </div>
+        </div>
+        <!-- Others Element -->
+
+
+        <!-- Income Element -->
+        <div class="income-element">
+            <div class="income-data">
+                <div class="income-data-upper-upper">Current Income</div>
+                <div class="income-data-upper-lower">20000</div>
+            </div>
+            <div class="income-icon">
+                <div class="income-actual-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="income-actual-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            </div>
+        </div>
+        <!-- Income Element -->
+
+        <!-- Close Transaction -->
+        <div class="close-transaction">
+            <div id="select-transaction-close" class="close-container" onclick="closeTransaction()"><i
+                    class="fa-solid fa-xmark"></i></div>
+        </div>
+
+        <!--Shares Close Transaction -->
+        <div class="close-transaction">
+            <div id="shares-transaction-close" class="close-container" onclick="closeSharesTransaction()"><i
+                    class="fa-solid fa-angle-left"></i></div>
+        </div>
+        <!--Shares Close Transaction -->
+
+        <!--Fixed Close Transaction -->
+        <div class="close-transaction">
+            <div id="fixed-transaction-close" class="close-container" onclick="closeFixedTransaction()"><i
+                    class="fa-solid fa-angle-left"></i></div>
+        </div>
+        <!--Fixed Close Transaction -->
+
+        <!--Others Close Transaction -->
+        <div class="close-transaction">
+            <div id="others-transaction-close" class="close-container" onclick="closeOthersTransaction()"><i
+                    class="fa-solid fa-angle-left"></i></div>
+        </div>
+        <!--Others Close Transaction -->
+
+        <!-- Close Transaction -->
+
+        <!-- Elements ---------->
+
+
+
+    </div>
+    <!-------Second Page---------->
+</body>
+
+</html>

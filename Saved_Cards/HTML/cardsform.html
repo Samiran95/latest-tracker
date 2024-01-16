@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/cardsform.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animation/cardsformanimate.js" defer></script>
+    <title>Saved Cards Form</title>
+</head>
+
+<body>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="loaderleave"></div>
+    <div class="screen">
+    <p class="screen-name">C A R D S</p>
+    <p class="screen-name">F O R M</p>
+    </div>
+    <!---Loader-->
+    <div class="upper">
+        <p class="heading-word">S A V E D</p>
+        <p class="heading-word1">C A R D S</p>
+    </div>
+
+    <div class="lower">
+        <form>
+            <input id="input" type="text" class="text-input" placeholder="Bank Name">
+            <input id="input" type="number" class="text-input" placeholder="Card Number">
+            <input id="input" type="text" class="text-input" placeholder="Owner Name">
+            <input id="input" type="text" class="text-input" placeholder="Expiry Date">
+            <input id="input" type="number" class="text-input" placeholder="CVV">
+            <input id="input" type="number" class="text-input" placeholder="Pin Number">
+            <input id="input" type="text" class="text-input" placeholder="Visa/Mastercard etc">
+            <select id="input" class="type-of-payment">
+                <option value="">Type of Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Virtual Card">Virtual Card</option>
+                <option value="Others">Others</option>
+            </select>
+        </form>
+        <div class="button">
+            <button type="button" class="submit" onclick="">Submit</button>
+        </div>
+    </div>
+    
+
+</body>
+
+
+</html>

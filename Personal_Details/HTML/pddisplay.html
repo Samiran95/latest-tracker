@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/pddisplay.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
+    <script src="../JS/Animation/pdanimate.js" defer></script>
+    <title>Personal Details</title>
+</head>
+
+<body>
+    <div class="upper-page">
+        <div class="upper">
+            <form class="filter-form">
+                <select class="typeofcard">
+                    <option value="">Filter by</option>
+                    <option value="Self">Self</option>
+                    <option value="Parents">Parents</option>
+                    <option value="Spouse">Spouse</option>
+                    <option value="Child">Child</option>
+                    <option value="Others">Others</option>
+                </select>
+                <button type="button" class="filter">Filter</button>
+                <button type="button" class="delete">Delete ?</button>
+            </form>
+        </div>
+        <div class="middle">
+            <div class="filter-name">
+                <p class="filter-word">Filter By :</p>
+                <p class="actual-filter">None</p>
+            </div>
+            <div class="card-heading">
+                <p class="saved-cards-word">Saved Cards</p>
+                <button type="button" class="add" onclick="personalForm()"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="delete" onclick="personalForm()"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="lower-section">
+                <div class="card">
+                    <div class="card-upper">
+                        <div class="card-name">Adhaar card</div>
+                        <div class="status">Active</div>
+                    </div>
+                    <div class="card-lower">
+                        <div class=number>123412341234</div>
+                        <div class="details">
+                            <div class="details-alignment">
+                                <p class="title">Name : </p>
+                                <div class="personal-details">
+                                    <div class="name">
+                                        <div class="first-name">Samiran</div>
+                                        <div class="middle-name">Sukumar</div>
+                                        <div class="last-name">Goldar</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p class="title">Date of Birth : </p>
+                                <div class="personal-details">12/12/2004</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p class="title">Address 1 : </p>
+                                <div class="personal-details">Room no. 13 , Adarsha Society, Nardas nagar, T.P road,
+                                    Bhandup
+                                    West ,
+                                    Mumbai - 400078</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p class="title">Address 2 : </p>
+                                <div class="personal-details">Room no. 13 , Adarsha Society, Nardas nagar, T.P road,
+                                    Bhandup
+                                    West ,
+                                    Mumbai - 400078</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p class="title">Blood Group : </p>
+                                <div class="personal-details">A+</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="expire-info">
+                                <div class="details-alignment">
+                                    <p class="title">Issued Date : </p>
+                                    <div class="personal-details">05/10/2023</div>
+                                </div>
+                                <div class="details-alignment">
+                                    <p class="title">Expiry Date : </p>
+                                    <div class="personal-details">05/10/2024</div>
+                                </div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p class="title">Issued State : </p>
+                                <div class="personal-details">Maharashtra</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p class="title">Father's Name : </p>
+                                <div class="personal-details">Sukumar Goldar</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p class="title">Mother's Name : </p>
+                                <div class="personal-details">Anjana Goldar</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p class="title">Gender : </p>
+                                <div class="personal-details">Male</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p class="title">For? : </p>
+                                <div class="personal-details">Self</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+                    <div class="card-upper">
+                        <div class="card-name">Driving Liscense</div>
+                        <div class="status">Active</div>
+                    </div>
+                    <div class="card-lower">
+                        <div class="details">
+                            <div class="details-alignment">
+                                <p>Name : </p>
+                                <div class="personal-details">
+                                    <div class="name">
+                                        <div class="first-name">Samiran</div>
+                                        <div class="middle-name">Sukumar</div>
+                                        <div class="last-name">Goldar</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p>Date of Birth : </p>
+                                <div class="personal-details">12/12/2004</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p>Address 1 : </p>
+                                <div class="personal-details">Room no. 13 , Adarsha Society, Nardas nagar, T.P road,
+                                    Bhandup
+                                    West ,
+                                    Mumbai - 400078</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p>Address 2 : </p>
+                                <div class="personal-details">Room no. 13 , Adarsha Society, Nardas nagar, T.P road,
+                                    Bhandup
+                                    West ,
+                                    Mumbai - 400078</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p>Blood Group : </p>
+                                <div class="personal-details">A+</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="expire-info">
+                                <div class="details-alignment">
+                                    <p>Issued Date : </p>
+                                    <div class="personal-details">05/10/2023</div>
+                                </div>
+                                <div class="details-alignment">
+                                    <p>Expiry Date : </p>
+                                    <div class="personal-details">05/10/2024</div>
+                                </div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p>Issued State : </p>
+                                <div class="personal-details">Maharashtra</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p>Father's Name : </p>
+                                <div class="personal-details">Sukumar Goldar</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p>Mother's Name : </p>
+                                <div class="personal-details">Anjana Goldar</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p>Gender : </p>
+                                <div class="personal-details">Male</div>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="details-alignment">
+                                <p>For? : </p>
+                                <div class="personal-details">Self</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lower-page">
+        <!----Form-->
+
+        <div class="personal-detail-form">
+            <div class="below-containers-upper">
+                <div class="container-description">Personal Details</div>
+                <div class="container-close" onclick="closePersonalForm()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="below-containers-middle">
+                <form class="personal-form">
+                    <input id="input" type="date">
+                    <input id="input" type="text">
+                    <input id="input" type="text">
+                    <select id="input">
+                        <option value="">Payment Method</option>
+                        <option value="UPI">UPI</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Online">Online</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </form>
+            </div>
+            <div class="below-containers-lower">
+                <div class="personal-submit-button">Submit</div>
+            </div>
+        </div>
+
+        <!----Form--->
+
+        <!--- Elements--->
+        <div class="personal-word">Personal Form</div>
+        <!--- Elements--->
+        
+    </div>
+</body>
+
+</html>
