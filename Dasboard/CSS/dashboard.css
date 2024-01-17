@@ -15,7 +15,7 @@ body{
 .upper-section{
     display: flex;
     overflow-x: scroll;
-    background: linear-gradient(47deg, rgba(210,210,210,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(79deg, rgba(255,255,255,1) 0%, rgba(223,223,223,1) 100%);
     height: 100vh;
 }
 
@@ -90,7 +90,7 @@ body{
     justify-content: center;
     width: 100%;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .upper-right{
@@ -130,17 +130,17 @@ body{
 
 .container-title{
     width: 80%;
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .container-title1{
     margin-top: 60px;
     width: 80%;
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
@@ -175,7 +175,7 @@ body{
     flex: 1;
     color: white;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
 }
@@ -206,7 +206,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 95%;
-    height: 250px;
+    min-height: 255px;
     justify-content: space-between;
     align-items: center;
 }
@@ -261,7 +261,6 @@ body{
 /*---------Investments---------*/
 
 .investment-card-upper{
-    padding: 10px;
     width: 95%;
     height: 140px;
     border-radius: 40px;
@@ -275,7 +274,7 @@ body{
 
 .investment-card-upper-upper{
     width: 100%;
-    flex: 1.5;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,7 +287,7 @@ body{
 
 .investment-card-upper-middle{
     width: 100%;
-    flex: 1;
+    flex: 0.5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,7 +298,6 @@ body{
     width: 100%;
     flex: 1;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-size: 20px;
     color: white;
@@ -326,11 +324,15 @@ body{
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(46,46,46,1) 100%);
-    min-width: 200px;
-    min-height: 80px;
+    min-width: 150px;
+    min-height: 70px;
     border-radius: 50px;
     margin-right: 15px;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 1);
+}
+
+.investments-small-card:nth-child(1){
+    margin-left: 10px;
 }
 
 .investments-small-card-upper{
@@ -339,8 +341,8 @@ body{
     width: 100%;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 600;
     color: orange;
 }
 
@@ -354,13 +356,13 @@ body{
 
 .investments-small-card-lower-left{
     font-weight: 500;
-    font-size: 17px;
+    font-size: 14px;
     color: white;
 }
 
 .investments-small-card-lower-right{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color: #70ff2e;
 }
 
